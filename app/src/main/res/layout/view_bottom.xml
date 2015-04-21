@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:andorid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/login_label_ip"
+        android:layout_marginLeft="20dip"
+        android:gravity="center"
+        android:text="server"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="text"
+        android:layout_toRightOf="@+id/login_label_ip"
+        android:id="@+id/login_edit_ip"
+        android:layout_width="200dip"
+        android:text="10.1.111.216"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/login_label_port"
+        android:layout_marginLeft="20dip"
+        android:gravity="center"
+        android:layout_below="@+id/login_edit_ip"
+        android:text="port"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_toRightOf="@+id/login_label_port"
+        android:layout_below="@+id/login_edit_ip"
+        android:id="@+id/login_edit_port"
+        android:layout_width="200dip"
+        android:text="38260"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/login_label_token"
+        android:layout_marginLeft="20dip"
+        android:gravity="center"
+        android:layout_below="@+id/login_edit_port"
+        android:text="token"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:text="401"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/login_label_token"
+        android:layout_below="@+id/login_edit_port"
+        android:id="@+id/login_et_token"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="wrap_content"
+        android:text="login"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_et_token"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
